@@ -28,6 +28,7 @@
   ansible.builtin.template:
     src: expense.conf.j2
     dest: /etc/nginx/default.d
+    remote_src: yes
   notify: 
     - restart services
 # - name: restart services
