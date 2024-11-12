@@ -31,7 +31,8 @@
     dest: /etc/nginx/default.d
     #remote_src: yes
   notify: 
-    - restart services
+  - restart services
+    
 # - name: restart services
 #   ansible.builtin.service:
 #     name: nginx
