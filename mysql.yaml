@@ -1,0 +1,5 @@
+- name: install mysql with service
+  hosts: mysql
+  become: true 
+  roles:
+  - mysql

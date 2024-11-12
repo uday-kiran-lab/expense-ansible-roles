@@ -1,0 +1,5 @@
+- name: install frontend with service
+  hosts: frontend
+  become: true 
+  roles:
+  - frontend
