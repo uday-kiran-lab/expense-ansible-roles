@@ -26,10 +26,10 @@
     remote_src: yes
 - name: Copy backend service file 
   ansible.builtin.template:
-    #src: expense.conf.j2
-    src: home/ec2-user/expense-ansible-roles/roles/backend/templates/expense.conf.j2
+    src: expense.conf.j2
+    #src: home/ec2-user/expense-ansible-roles/roles/backend/templates/expense.conf.j2
     dest: /etc/nginx/default.d
-    remote_src: yes
+    #remote_src: yes
   notify: 
     - restart services
 # - name: restart services
