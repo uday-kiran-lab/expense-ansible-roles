@@ -1,4 +1,4 @@
-- name: intsall
+- name: install
   ansible.builtin.package: # module used for install package
     name: nginx
     state: present # present means installed, absent means uninstall
