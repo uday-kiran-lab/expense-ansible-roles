@@ -52,8 +52,8 @@
     target: /app/schema/backend.sql
     name: all
     state: import
-# - name: backend services is running
-#   ansible.builtin.systemd_service:
-#     state: restarted
-#     daemon_reload: true
-#     name: backend
+- name: backend services is running
+  ansible.builtin.systemd_service:
+    state: restarted
+    daemon_reload: true
+    name: backend
