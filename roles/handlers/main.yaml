@@ -1,9 +1,10 @@
+- name: restart services
+  ansible.builtin.service:
+    name: nginx
+    state: restarted
+
 # - name: backend services is running
 #   ansible.builtin.systemd_service:
 #     state: restarted
 #     daemon_reload: true
 #     name: backend
-- name: restart services
-  ansible.builtin.service:
-    name: nginx
-    state: restarted
