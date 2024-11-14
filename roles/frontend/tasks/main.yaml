@@ -28,7 +28,7 @@
   ansible.builtin.template:
     src: expense.conf.j2
     #src: home/ec2-user/expense-ansible-roles/roles/backend/templates/expense.conf.j2
-    dest: /etc/nginx/default.d
+    dest: /etc/nginx/default.d/expense.conf
     #remote_src: yes
   notify: 
   - restart services
